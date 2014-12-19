@@ -1,5 +1,5 @@
 module Puppet
-  newtype(:java_ks) do
+  newtype(:keytool) do
     @doc = 'Manages entries in a java keystore.  Uses composite namevars to
         accomplish the same alias spread across multiple target keystores.'
 

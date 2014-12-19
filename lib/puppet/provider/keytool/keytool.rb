@@ -1,6 +1,6 @@
 require 'puppet/util/filetype'
 
-Puppet::Type.type(:java_ks).provide(:keytool) do
+Puppet::Type.type(:keytool).provide(:keytool) do
   desc 'Uses a combination of openssl and keytool to manage Java keystores'
 
   def command_openssl

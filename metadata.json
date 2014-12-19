@@ -1,5 +1,5 @@
 {
-  "name": "puppetlabs-java_ks",
+  "name": "synyx-keytool",
   "version": "1.2.6",
   "author": "puppetlabs",
   "summary": "Manage arbitrary Java keystore files",
