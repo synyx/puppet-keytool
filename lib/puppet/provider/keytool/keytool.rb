@@ -9,7 +9,15 @@ Puppet::Type.type(:keytool).provide(:keytool) do
   end
 
   def keystore
-    "#{@resource[:java_home]}/lib/security/cacerts"
+    "#{java_home}/lib/security/cacerts"
+  end
+
+  def java_home
+    if !@resource[:java_home].nil? and !@resource[:java_home].empty?
+      @resource[:java_home]
+    else
+      `readlink -f /etc/alternatives/java | sed 's:/bin/java::'`.chomp
+    end
   end
 
   def exists?
@@ -59,7 +67,7 @@ Puppet::Type.type(:keytool).provide(:keytool) do
       :failonfail => true,
       :combine => true ,
       :custom_environment => {
-        'PATH' => "#{@resource[:java_home]}/bin:#{ENV['PATH']}"
+        'PATH' => "#{java_home}/bin:#{ENV['PATH']}"
       }
     }
 

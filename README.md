@@ -48,7 +48,7 @@ Parameters
 
 #### `ensure`
 
-The `ensure` parameter accepts three attributes: absent, present.
+The `ensure` parameter accepts two attributes: absent, present.
 
 #### `name`
 
@@ -65,5 +65,5 @@ The password used to protect the keystore. Default value is `changeit`.
 
 #### `java_home`
 
-The path to point to the JRE installation directory.
+The path to point to the JRE installation directory. If the parameter is not given, the java home location is determined via /etc/alternatives.
 
