@@ -3,7 +3,7 @@
   "version": "1.3.0",
   "author": "puppetlabs",
   "summary": "Manage the JRE keystore",
-  "license": "Apache License 2.0",
+  "license": "Apache-2.0",
   "source": "https://github.com/synyx/puppet-keytool.git",
   "project_page": "https://github.com/synyx/puppet-keytool",
   "issues_url": "https://github.com/synyx/puppet-keytool/issues",
@@ -17,7 +17,7 @@
     {
       "operatingsystem": "Debian",
       "operatingsystemrelease": [
-        "7",
+        "7"
       ]
     }
   ],

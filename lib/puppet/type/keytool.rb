@@ -47,8 +47,6 @@ module Puppet
 
     newparam(:java_home) do
       desc "Variable to point to the JRE installation directory"
-
-      isrequired
     end
 
     # Where we setup autorequires.
